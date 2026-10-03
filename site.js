@@ -47,3 +47,14 @@
   layout();restart();
 })();
 
+
+// 店舗数グラフのツールチップ
+(function(){
+  var fig=document.querySelector('.growth');if(!fig)return;var tip=fig.querySelector('.growth-tip');
+  fig.querySelectorAll('.bar').forEach(function(g){
+    var t=g.querySelector('title').textContent;
+    function show(){var r=g.querySelector('rect').getBoundingClientRect(),f=fig.getBoundingClientRect();tip.textContent=t;tip.style.left=(r.left-f.left+r.width/2-tip.offsetWidth/2)+'px';tip.style.top=(r.top-f.top-34)+'px';tip.style.opacity=1}
+    g.addEventListener('mouseenter',show);g.addEventListener('focus',show);g.addEventListener('click',show);
+    g.addEventListener('mouseleave',function(){tip.style.opacity=0});g.addEventListener('blur',function(){tip.style.opacity=0});
+  });
+})();

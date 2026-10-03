@@ -12,5 +12,6 @@ for f in sorted((R / "src").glob("*.html")):
     (P / f.name).write_text(s)
 for x in ("style.css", "site.js", "CNAME"):
     if (R / x).exists(): shutil.copy(R / x, P / x)
-for d in ("img", "video"): shutil.copytree(R / d, P / d)
+for d in ("img", "video"):
+    if (R / d).exists(): shutil.copytree(R / d, P / d)
 print("built:", ", ".join(p.name for p in sorted(P.glob("*.html"))))
