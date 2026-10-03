@@ -8,9 +8,37 @@
 <body>
 {{header}}
 
-<!-- ===== ヒーロー ===== -->
-<div class="hero video-hero">
-  <video src="video/top.mp4" autoplay muted loop playsinline poster="img/top-tempura.jpg"></video>
+<!-- ===== トップのスライド（写真を押すと各ページへ） ===== -->
+<div class="slider" id="slider" aria-roledescription="carousel">
+  <div class="slides">
+    <a class="slide" href="https://agerucompany-ai.github.io/tempura-oshio-site/" target="_blank" rel="noopener">
+      <img src="img/top-tempura.jpg" alt="天ぷらとワイン 大塩">
+      <div class="cap"><img class="cap-logo" src="img/logo-tempura-w.png" alt=""><span>天ぷらとワイン 大塩<small>旬に勝る素材なし。東京・大阪8店舗</small></span></div>
+    </a>
+    <a class="slide" href="https://agerucompany-ai.github.io/washoku-oshio-site/" target="_blank" rel="noopener">
+      <img src="img/top-washoku.jpg" alt="和食 大塩">
+      <div class="cap"><img class="cap-logo" src="img/logo-washoku-w.png" alt=""><span>和食 大塩<small>旬を本格和食でカジュアルに。大阪駅前第三ビル</small></span></div>
+    </a>
+    <a class="slide" href="https://agerucompany-ai.github.io/takoyakinaniwa-site/" target="_blank" rel="noopener">
+      <img src="img/top-takoyaki.jpg" alt="たこ焼き酒場 なにわ">
+      <div class="cap"><img class="cap-logo" src="img/logo-naniwa-w.png" alt=""><span>たこ焼き酒場 なにわ<small>本場大阪の“ふわとろ”たこ焼き。東京・丸の内</small></span></div>
+    </a>
+    <a class="slide" href="https://agerucompany-ai.github.io/tambanosho-site/" target="_blank" rel="noopener">
+      <img src="img/slide-tanba.jpg" alt="丹波農商の田んぼ">
+      <div class="cap"><img class="cap-logo" src="img/logo-tanba-w2.png" alt=""><span>丹波農商<small>但馬牛・牧草・堆肥・米・丹波栗の循環型農業</small></span></div>
+    </a>
+    <a class="slide slide-ai" href="ai.html">
+      <div class="ai-bg"><img src="img/ai/kanai_wave.png" alt="AI KANAI"></div>
+      <div class="cap"><span>AI KANAI<small>店の経営を、AIに。自社の店で毎日動く経営AI</small></span></div>
+    </a>
+    <a class="slide" href="recruit.html">
+      <img src="img/recruit-duo.jpg" alt="一緒に働く仲間">
+      <div class="cap"><img class="cap-logo wide" src="img/copy-nakama.png" alt=""><span>採用情報<small>一緒に働く仲間、募集中</small></span></div>
+    </a>
+  </div>
+  <button class="nav prev" aria-label="前へ">‹</button>
+  <button class="nav next" aria-label="次へ">›</button>
+  <div class="dots"></div>
 </div>
 
 <!-- ===== 事業内容（飲食） ===== -->
