@@ -86,7 +86,7 @@ section{padding:96px 16px}
 .greeting{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:center}
 .greeting img.ceo{width:100%;aspect-ratio:4/3;object-fit:cover}
 .greeting p{font-size:15px;line-height:2.2;margin-bottom:1em}
-.greeting .sign{width:200px;margin-left:auto;margin-top:16px}
+.greeting .sign{width:180px;margin-left:auto;margin-top:16px}
 
 /* 2 company org */
 .org{display:grid;grid-template-columns:3fr 2fr;gap:48px;align-items:start}
@@ -99,8 +99,8 @@ section{padding:96px 16px}
 .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
 .staff-grid.two{grid-template-columns:repeat(2,1fr);max-width:720px;margin:0 auto}
 .staff{text-align:center}
-.staff .pic{aspect-ratio:1/1;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
-.staff .pic img{max-height:100%;width:auto}
+.staff .pic{height:260px;display:flex;align-items:flex-end;justify-content:center}
+.staff .pic img{max-height:100%;max-width:100%;width:auto;object-fit:contain}
 .staff .role{font-family:var(--sans);font-size:13px;color:var(--accent);letter-spacing:.08em;margin-top:18px}
 .staff h3{font-size:19px;font-weight:600;margin:2px 0 10px}
 .staff p{font-size:14px;line-height:1.9;text-align:left;max-width:280px;margin:0 auto}
@@ -247,3 +247,33 @@ section.alt .interview .pic{order:2}
 .biz-grid>.biz-card:nth-child(odd):last-child{grid-column:1/-1;width:calc(50% - 32px);margin:0 auto}
 @media (max-width:800px){.biz-grid>.biz-card:nth-child(odd):last-child{width:100%}}
 .navy .biz-card .ph.ai-ph{background:linear-gradient(135deg,#1d3a7a 0%,#3a5fb0 100%);outline:1px solid rgba(255,255,255,.25)}
+
+/* ---------- スマホの余白・はみ出し調整（2026-10-03） ---------- */
+@media (max-width:800px){
+  section{padding:56px 16px}
+  .sec-title{letter-spacing:.15em;margin-bottom:36px;font-size:22px}
+  .sec-title small{letter-spacing:.2em}
+  /* 動画ヒーローは16:9のまま全体を見せる（左右が切れて文字が欠けるため） */
+  .hero.video-hero{height:auto;min-height:0;aspect-ratio:16/9;margin-top:64px}
+  .hero.video-hero::after{display:none}
+  .biz-grid{gap:48px}
+  .biz-card h3{margin-top:18px}
+  .staff .pic{height:220px}
+  .staff p{max-width:none}
+  .interview .pic img{max-height:300px}
+  .brand-row{gap:16px 20px;margin-bottom:28px}
+  .brand-row img{height:70px}
+  .org .logos img{height:70px}
+  .numbers b{font-size:40px}
+  .numbers div{padding:20px 6px}
+  .lead{font-size:14px;text-align:left}
+  .lead br{display:none}
+  .recruit-banner .inner{padding:72px 16px}
+  .greeting .sign{width:150px}
+  .contact .box{padding:28px 16px}
+  .hero .copy-pair img{width:38vw}
+  .ai-stats{gap:10px}
+  .ai-card .shot{height:220px}
+  .big-catch{padding:28px 16px 32px}
+}
+@media (max-width:800px){.site-header{background:var(--navy)}}
