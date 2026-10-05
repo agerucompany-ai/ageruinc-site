@@ -14,4 +14,5 @@ for x in ("style.css", "site.js", "CNAME"):
     if (R / x).exists(): shutil.copy(R / x, P / x)
 for d in ("img", "video"):
     if (R / d).exists(): shutil.copytree(R / d, P / d)
+(P / ".nojekyll").write_text("")
 print("built:", ", ".join(p.name for p in sorted(P.glob("*.html"))))
