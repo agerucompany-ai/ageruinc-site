@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;800;900&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<title>AI事業 AI KANAI｜株式会社アゲル</title>
+<meta name="description" content="飲食店経営AI「AI KANAI」。注文、会計、予約、打刻、給与、シフト、経理。自社10店舗で毎日動いている仕組みを、飲食店のみなさまへ。レジを開けば、営業中に今日の利益が出ます。">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="img/logo-ageru-w.png" alt="AGERU inc."></a>
+  <button class="menu-btn" aria-label="メニュー">☰</button>
+  <nav>
+    <a href="index.html">TOP</a>
+    <a href="company.html">会社概要</a>
+    <a href="ai.html">AI事業</a>
+    <a href="recruit.html">採用情報</a>
+    <a href="interview.html">社員インタビュー</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- 内容の正本は AI KANAI の LP（https://ai-kanai.onrender.com/lp）。料金は saasPlan.js（2026-10-20 時点）の値を転記。金額を変えるときは LP に合わせる。 -->
+<!-- 画像: reg_pl_*.png / reg_yoyaku_*.png / live_board.png は 2026-10-17 の本番画面（お名前はぼかし済み・触らない）。reg_*.jpg / pos_*.jpg / kiosk / kyuyo はダミー環境のサンプル。 -->
+
+<!-- ===== ヒーロー ===== -->
+<div class="hero ai-hero">
+  <div class="hero-inner ai-hero-inner">
+    <div class="ai-hero-text">
+      <p class="ai-eyebrow">AI事業｜飲食店経営AI</p>
+      <h1 class="ai-h1">店の経営を、<br><span>AI KANAI</span>に。</h1>
+      <p class="ai-lead">注文、会計、予約、打刻、給与、シフト、経理。<br>店のことはKANAIが回します。<br>人は、人にしかできないことを。</p>
+      <div class="ai-hero-btns">
+        <a class="btn light" href="https://ai-kanai.onrender.com/lp" target="_blank" rel="noopener">サービスの詳細と料金</a>
+        <a class="btn outline" href="https://ai-kanai.onrender.com/contact" target="_blank" rel="noopener">導入のご相談</a>
+      </div>
+    </div>
+    <img class="ai-hero-chara" src="img/ai/kanai_wave.png" alt="AI KANAI">
+  </div>
+</div>
+
+<!-- ===== AI KANAIとは ===== -->
+<section>
+  <div class="narrow">
+    <h2 class="sec-title fade">AI KANAIとは<small>ABOUT</small></h2>
+    <p class="lead fade">天ぷらとワイン大塩・たこ焼き酒場なにわなど、<br>大阪・東京のアゲルの店舗を毎日回している仕組みが AI KANAI です。<br>デモ用ではなく、自社の店で実際に動いているものを<br>飲食店のみなさまにお届けします。</p>
+    <div class="ai-stats fade">
+      <div><b>10<small>店</small></b><span>自社の店で毎日稼働<br>（大阪・東京）</span></div>
+      <div><b>0<small>円</small></b><span>タイムカード・レジ・<br>モバイルオーダーの利用料</span></div>
+      <div><b>今日<small>のPL</small></b><span>営業中に、<br>その日の利益がレジに出る</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 考え方 ===== -->
+<section class="navy">
+  <div class="wrap ai-concept">
+    <img class="fade" src="img/ai/kanai_tea.png" alt="">
+    <div class="fade">
+      <h2 class="sec-title" style="text-align:left;letter-spacing:.2em">経営は、AI KANAIに預ける。</h2>
+      <p>レジもタイムカードも予約も、データを一か所に預けると、売上・人件費・原価が最初から同じ場所にそろいます。だから、どこが詰まっているかをAIが自分で見つけます。雑務と、人を疑う仕事がなくなります。</p>
+      <p>料理人は料理に、サービスはサービスに。一度入った数字は、誰も打ち直しません。</p>
+      <p class="ai-motto">店は、KANAIが回す。<br>人は、人を幸せにする。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 店の入口 ===== -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title fade">店の入口<small>FRONT</small></h2>
+    <p class="lead fade" style="margin-top:-28px;margin-bottom:56px">お客様と、スタッフの手元に。</p>
+
+    <!-- レジ -->
+    <div class="ai-feat fade">
+      <div class="txt">
+        <span class="tag">REGISTER</span>
+        <h3>レジは、店舗経営の<br>最重要インターフェース。</h3>
+        <p>会計の道具ではありません。注文・支払い・原価に、AI KANAIのタイムカードから取った人件費が同じ場所に集まるので、営業中にその日の利益が出ます。人件費は開局中10分ごとに自動で取り直し、店の合計だけを出します。誰の時給も、どの画面にも出ません。</p>
+        <p>同じ数字を、スマホの全店ライブでも。スタッフ全員が、売上ではなく利益を見て動けます。</p>
+        <ul class="ai-points">
+          <li>閉店後の打ち込みがほぼない。締めはホームの「精算」を押すだけ</li>
+          <li>PayPayの履歴を自動で取り込み、合わないものだけ「要確認」に</li>
+          <li>系列店の空席がレジの横に。店の切り替えもワンタップ</li>
+        </ul>
+        <p class="ai-price"><b>0円</b><span>利用料・1店あたり月（決済手数料・機器は別）</span></p>
+      </div>
+      <div class="vis vis-pl">
+        <img class="card" src="img/ai/reg_pl_card.png" alt="レジのホームに出る今日のPL（売上・原価・人件費・利益）">
+        <img class="phone" src="img/ai/live_board.png" alt="スマホの全店ライブ（店ごとの本日PL）">
+        <p class="ai-cap">レジの「今日のPL」と、スマホの全店ライブ（本番の画面）</p>
+      </div>
+    </div>
+    <div class="ai-wide fade">
+      <img src="img/ai/reg_pl_home.png" alt="レジのホーム画面。右に今日のPL">
+      <p class="ai-cap">レジのホーム。開局・精算・レジ締めの横に、今日のPL（本番の画面）</p>
+    </div>
+
+    <!-- 予約台帳 -->
+    <div class="ai-feat rev fade">
+      <div class="txt">
+        <span class="tag">RESERVE</span>
+        <h3>その日入った新人でも、<br>常連が分かる。</h3>
+        <p>自社のネット予約も、グルメサイトからの予約も、電話も。どこから入った予約も全店ぶん1つの台帳にまとめ、お客様は電話番号で1人に。レジの予約欄に、名字の横に「3回目」と出ます。押すと、いつ・どの店に来られたかが分かります。</p>
+        <ul class="ai-points">
+          <li>ポイント利用のお客様は「P」の印。媒体の備考欄を見に行かなくていい</li>
+          <li>来店されたらタップで斜線。どの端末でも同じ</li>
+          <li>お客様のネット予約ページは5ヶ国語。店ごとのURLとロゴで</li>
+        </ul>
+        <p class="ai-price"><b>6,000円</b><span>1店あたり月（自社ネット予約・各媒体の取り込み・顧客台帳）</span></p>
+      </div>
+      <div class="vis vis-col">
+        <img class="col" src="img/ai/reg_yoyaku_col.png" alt="レジの予約欄。今日の予約と来店回数、ポイント利用の印">
+        <p class="ai-cap">レジの予約欄。2回目・3回目、500P・600P（本番の画面・お名前は伏せています）</p>
+      </div>
+    </div>
+    <div class="ai-wide fade">
+      <img src="img/ai/reg_yoyaku_tables.png" alt="レジのテーブル画面。右に今日の予約">
+      <p class="ai-cap">席を見ながら、今日の予約が目に入る位置に（本番の画面）</p>
+    </div>
+
+    <!-- モバイルオーダー -->
+    <div class="ai-feat fade">
+      <div class="txt">
+        <span class="tag">ORDER</span>
+        <h3>お会計は、<br>テーブルの上で終わる。</h3>
+        <p>席のQRから注文して、そのまま自分のスマホで支払い。一番上には旬の一品、言葉は5ヶ国語に自動で翻訳。注文はそのまま厨房の画面とレジの会計に流れるので、伝票も、暗算も、レジの列もなくなります。</p>
+        <ul class="ai-points">
+          <li>アプリも会員登録もいらない。QRを読むだけ</li>
+          <li>ハンディはiPhoneでQRを読むだけで追加</li>
+          <li>紙の伝票を出すこともできる（場所ごとに紙／画面／両方）</li>
+        </ul>
+        <p class="ai-price"><b>0円</b><span>利用料・1店あたり月（決済手数料は各決済会社の料金）</span></p>
+      </div>
+      <div class="vis vis-phones">
+        <img class="phone" src="img/ai/mo_top.jpg" alt="注文画面。旬・おすすめが一番上">
+        <img class="phone" src="img/ai/pos_checkout.jpg" alt="席でのお会計。PayPayで支払う">
+        <p class="ai-cap">お客様のスマホ。注文と、席でのお会計</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 経営の裏側 ===== -->
+<section class="cream">
+  <div class="wrap">
+    <h2 class="sec-title fade">経営の裏側<small>BACK OFFICE</small></h2>
+    <p class="lead fade" style="margin-top:-28px;margin-bottom:48px">必要になったぶんだけ、足していく。</p>
+    <ol class="ai-menu">
+      <li class="fade"><b>① タイムカード</b><span>打刻と勤務データ。ずっと0円。</span><em>0円<small>店舗数・人数 無制限</small></em></li>
+      <li class="fade"><b>② 給与明細 自動作成</b><span>打刻から計算して、明細はスタッフのLINEに届きます。</span><em>月300円〜<small>5人まで／6人目〜100円／10人目〜50円</small></em></li>
+      <li class="fade"><b>③ シフトAI</b><span>希望提出から自動作成、欠員の募集文まで。</span><em>150円/人<small>1店あたり上限4,500円／10店以上120円/人</small></em></li>
+      <li class="fade"><b>④ 経理自動化</b><span>レジ締めから入金照合、資金繰りまで。</span><em>1,480円/店<small>＋ 本部 4,900円/社（店舗数無制限）</small></em></li>
+      <li class="fade soon"><b>⑤ 給与振込代行<i>準備中</i></b><span>計算から明細確定、振込データの納品まで。準備中・ご相談は受付。</span><em>9,000円/社<small>＋ 300円/人（予定）</small></em></li>
+      <li class="fade soon"><b>⑥ 組織インストール<i>準備中</i></b><span>自社の店を回すスタッフが伴走。必要なメニューだけ。準備中・ご相談は受付。</span><em>5万円/人日<small>顧問料なし・必要なメニューだけ（予定）</small></em></li>
+    </ol>
+    <div class="ai-shots fade">
+      <img src="img/ai/kiosk_home.jpg" alt="タイムカードの打刻画面" style="object-position:left top">
+      <img src="img/ai/kyuyo_slip.jpg" alt="LINEに届く給与明細">
+      <img src="img/ai/shift_recruit.png" alt="シフトの欠員募集文" style="object-position:center bottom">
+    </div>
+    <p class="center fade" style="font-size:13px;color:var(--muted);margin-top:12px">※ 金額は税抜。タイムカード・給与明細の画面はサンプルデータです</p>
+  </div>
+</section>
+
+<!-- ===== 誰の、何が変わるか ===== -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title fade">誰の、何が変わるか<small>FOR WHOM</small></h2>
+    <div class="ai-roles">
+      <div class="fade">
+        <h3>オーナー</h3>
+        <p>全店の今日の利益（売上・原価・人件費）がスマホに出る。レジ締め・カード・PayPay・銀行の突き合わせは毎日KANAIがやり、ずれた日だけ知らせが来る。数字を集めて回る仕事がなくなる。</p>
+      </div>
+      <div class="fade">
+        <h3>店長</h3>
+        <p>シフトは希望がLINEで集まって組まれ、足りない日は募集文まで出る。打刻の押し忘れ・締めの差異は朝のLINEにタスクで届く。明細は公開を押すだけ。</p>
+      </div>
+      <div class="fade">
+        <h3>スタッフ</h3>
+        <p>打刻は名前をタップ。給与明細はLINEに届き、自分で出勤実績と突き合わせられる。レジの予約欄で、入ったばかりでも常連が分かる。有給や質問はLINEのKANAIに聞く。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 詳細・相談 ===== -->
+<section class="navy">
+  <div class="narrow center">
+    <img class="fade" src="img/ai/kanai_point.png" alt="" style="width:150px;margin:0 auto 24px">
+    <h2 class="sec-title fade" style="margin-bottom:24px">まずは、ご相談ください。</h2>
+    <p class="fade" style="margin-bottom:32px">各サービスの画面・できること・料金は、AI KANAIのサイトに。<br>無料のタイムカードから始められます。</p>
+    <div class="ai-cta fade">
+      <a class="btn light" href="https://ai-kanai.onrender.com/lp" target="_blank" rel="noopener">サービスの詳細と料金を見る</a>
+      <a class="btn outline" href="https://ai-kanai.onrender.com/contact" target="_blank" rel="noopener">AI KANAIについて問い合わせる</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img src="img/logo-ageru-w.png" alt="AGERU inc.">
+  <nav>
+    <a href="index.html">TOP</a><a href="company.html">会社概要</a><a href="ai.html">AI事業</a><a href="recruit.html">採用情報</a><a href="interview.html">社員インタビュー</a><a href="index.html#contact">お問い合わせ</a>
+  </nav>
+  <small>© 株式会社アゲル All Rights Reserved.</small>
+</footer>
+<script src="site.js"></script>
+
+</body>
+</html>
